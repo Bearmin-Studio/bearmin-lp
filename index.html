@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Bearmin Studioは、中小事業者のExcel自動化、業務システム構築、RPA導入を支援する業務自動化パートナーです。"
+    >
+    <title>Bearmin Studio | 業務自動化パートナー</title>
+    <link rel="canonical" href="https://bearmin.jp/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bearmin Studio">
+    <meta property="og:title" content="Bearmin Studio | 業務自動化パートナー">
+    <meta property="og:description" content="中小事業者のExcel自動化、業務システム構築、RPA導入を月額制で支援。先着5社様限定で初月お試し無料キャンペーン実施中。">
+    <meta property="og:url" content="https://bearmin.jp/">
+    <meta property="og:image" content="https://bearmin.jp/assets/images/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bearmin Studio - 業務を自動化しませんか？">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bearmin Studio | 業務自動化パートナー">
+    <meta name="twitter:description" content="中小事業者のExcel自動化、業務システム構築、RPA導入を月額制で支援。先着5社様限定で初月お試し無料キャンペーン実施中。">
+    <meta name="twitter:image" content="https://bearmin.jp/assets/images/og-default.png">
+    <meta name="twitter:image:alt" content="Bearmin Studio - 業務を自動化しませんか？">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "wxgjmoyq2a");
+    </script>
+  </head>
+  <!--
+    キャンペーン切り替え:
+      <body class="campaign-active">   ← キャンペーン中（初月お試し無料 / 先着5社）
+      <body>                            ← 通常表示
+  -->
+  <body class="campaign-active">
+    <svg aria-hidden="true" class="svg-sprite">
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m20 6-11 11-5-5" />
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16" />
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="m18 6-12 12M6 6l12 12" />
+      </symbol>
+      <symbol id="icon-clipboard-check" viewBox="0 0 24 24">
+        <path d="M9 5h6m-7 2h8m-1-4H9a2 2 0 0 0-2 2v1H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2V5a2 2 0 0 0-2-2Z" />
+        <path d="m9 15 2 2 4-5" />
+      </symbol>
+      <symbol id="icon-message-circle-check" viewBox="0 0 24 24">
+        <path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.2A8.5 8.5 0 1 1 21 11.5Z" />
+        <path d="m8.5 12 2 2 4-5" />
+      </symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" />
+        <path d="M12 6v6l4 2" />
+      </symbol>
+      <symbol id="icon-building-2" viewBox="0 0 24 24">
+        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18" />
+        <path d="M4 22h16M10 6h4M10 10h4M10 14h4M10 18h4" />
+      </symbol>
+      <symbol id="icon-sparkles" viewBox="0 0 24 24">
+        <path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3ZM19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14ZM5 14l.8 2.2L8 17l-2.2.8L5 20l-.8-2.2L2 17l2.2-.8L5 14Z" />
+      </symbol>
+      <symbol id="icon-timer-reset" viewBox="0 0 24 24">
+        <path d="M10 2h4M12 14V8M12 22a8 8 0 1 0-6.3-12.9" />
+        <path d="M3 9v5h5" />
+      </symbol>
+      <symbol id="icon-shield-check" viewBox="0 0 24 24">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="icon-users-round" viewBox="0 0 24 24">
+        <path d="M18 21a6 6 0 0 0-12 0" />
+        <path d="M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 20a5 5 0 0 0-4-4.9M2 20a5 5 0 0 1 4-4.9" />
+      </symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24">
+        <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" />
+        <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" />
+        <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+      </symbol>
+      <symbol id="icon-user-check" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM16 11l2 2 4-4" />
+      </symbol>
+      <symbol id="icon-layout-dashboard" viewBox="0 0 24 24">
+        <path d="M3 3h7v9H3V3ZM14 3h7v5h-7V3ZM14 12h7v9h-7v-9ZM3 16h7v5H3v-5Z" />
+      </symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24">
+        <path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1" />
+      </symbol>
+      <symbol id="icon-repeat" viewBox="0 0 24 24">
+        <path d="m17 2 4 4-4 4" />
+        <path d="M3 11V9a3 3 0 0 1 3-3h15" />
+        <path d="m7 22-4-4 4-4" />
+        <path d="M21 13v2a3 3 0 0 1-3 3H3" />
+      </symbol>
+      <symbol id="icon-alarm-clock" viewBox="0 0 24 24">
+        <path d="M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM5 3 2 6M19 3l3 3M12 9v4l3 2" />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Bearmin Studio トップへ">
+          <img class="brand-logo" src="assets/images/logo.png" alt="Bearmin Studio" width="1322" height="347">
+        </a>
+
+        <nav class="site-nav" aria-label="主要ナビゲーション">
+          <a href="#services">サービス</a>
+          <a href="#features">特徴</a>
+          <a href="#results_testimonials">導入事例</a>
+          <a href="#pricing">料金プラン</a>
+          <a href="#faq">よくある質問</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-primary header-primary" href="#final_cta" data-open-modal="diagnosis">無料診断する</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-bg" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">中小事業者の「めんどうくさい作業」をまるごと自動化</p>
+            <h1 class="hero-title">
+              <img class="hero-title-image" src="assets/images/hero_title.png" alt="時間と余裕をつくる 自動化パートナー" width="2508" height="627">
+            </h1>
+            <p class="hero-description">
+              Excel・スプレッドシートの自動化から、業務システム構築、RPA導入まで。人がやらなくてもいい作業を減らし、人件費削減、属人化の解消、業務効率向上が叶えられる環境をつくります。
+            </p>
+            <a class="hero-campaign campaign-only" href="#final_cta">
+              初月お試し無料キャンペーン実施中
+            </a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#final_cta" data-open-modal="diagnosis">
+                無料で診断してみる
+                <svg><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+            <ul class="trust-list" aria-label="安心して始められる理由">
+              <li><svg><use href="#icon-check"></use></svg>IT担当不要で安心</li>
+              <li><svg><use href="#icon-check"></use></svg>月額制で始めやすい</li>
+              <li><svg><use href="#icon-check"></use></svg>継続改善で効果が続く</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <img
+              class="hero-image"
+              src="assets/images/hero_black_gold.png"
+              alt="業務自動化に取り組むビジネスパーソン"
+              width="1254"
+              height="1254"
+              loading="eager"
+            >
+            <div class="metric-card metric-time" aria-hidden="true">
+              <span class="metric-label">今月の削減時間</span>
+              <strong class="metric-value">28.5<span>時間</span></strong>
+              <span class="metric-sub">先月比 +21.4時間</span>
+              <svg class="metric-sparkline" viewBox="0 0 150 48">
+                <path d="M4 40 C22 22, 31 34, 45 22 S70 30, 86 16 S111 20, 124 10 S141 12, 146 4"></path>
+              </svg>
+            </div>
+            <div class="metric-card metric-rate" aria-hidden="true">
+              <span class="metric-label">作業時間の削減率</span>
+              <strong class="metric-value">-68<span>%</span></strong>
+              <div class="metric-bars">
+                <span style="height: 34%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 44%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 50%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section problems" id="problems">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Problems</p>
+            <h2>こんなお悩みありませんか？</h2>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card reveal">
+              <img src="assets/images/problem_repetitive_work.png" alt="同じ作業を繰り返している担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <h3>毎月同じ作業を繰り返している</h3>
+              <p>転記・集計・資料作成に時間がかかっている</p>
+            </article>
+            <article class="problem-card reveal">
+              <img src="assets/images/problem_complex_excel.png" alt="複雑なスプレッドシートに悩む担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <h3>Excelが複雑化し属人化している</h3>
+              <p>特定の担当者しかわからず引き継げない</p>
+            </article>
+            <article class="problem-card reveal">
+              <img src="assets/images/problem_no_it_staff.png" alt="IT相談先がなく困っている担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <h3>IT担当がいなくて改善できない</h3>
+              <p>誰に相談すればいいかわからず放置している</p>
+            </article>
+            <article class="problem-card reveal">
+              <img src="assets/images/problem_efficiency_before_hiring.png" alt="採用前の効率化を考える担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <h3>人を増やす前に効率化したい</h3>
+              <p>採用コストをかけずに生産性を上げたい</p>
+            </article>
+            <article class="problem-card reveal">
+              <img src="assets/images/problem_human_error.png" alt="作業ミスや抜け漏れに悩む担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <h3>ミスや抜け漏れが発生してしまう</h3>
+              <p>手作業が多くヒューマンエラーが不安</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Scope</p>
+            <h2>1つの月額契約で、<span>3つの業務領域</span>すべてに対応</h2>
+            <p class="section-lead">プランの制作件数の範囲内で、以下の3領域を自由に組み合わせてご依頼いただけます。<br/>領域ごとに追加料金が発生することはありません。</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card service-green reveal">
+              <span class="service-tag">対応領域 01</span>
+              <img src="assets/images/service_excel_automation_gold.png" alt="スプレッドシート自動化を表すゴールド基調のダッシュボードUI" loading="lazy" width="1536" height="1024">
+              <div class="service-content">
+                <h3>Excel・スプレッドシート自動化</h3>
+                <ul class="check-list">
+                  <li>集計・データ整理の自動化</li>
+                  <li>CSV加工・データ整形</li>
+                  <li>Google Apps Script（GAS）開発</li>
+                  <li>マクロ・VBA改善</li>
+                  <li>ダッシュボード作成・可視化</li>
+                </ul>
+              </div>
+            </article>
+            <article class="service-card service-blue reveal">
+              <span class="service-tag">対応領域 02</span>
+              <img src="assets/images/service_business_system_gold.png" alt="業務システム構築を表すゴールド基調のダッシュボードUI" loading="lazy" width="1536" height="1024">
+              <div class="service-content">
+                <h3>業務システム構築</h3>
+                <ul class="check-list">
+                  <li>顧客管理システム</li>
+                  <li>案件・プロジェクト管理</li>
+                  <li>問い合わせ管理</li>
+                  <li>予約・タスク・在庫管理</li>
+                  <li>独自業務に合わせたシステム開発</li>
+                </ul>
+              </div>
+            </article>
+            <article class="service-card service-purple reveal">
+              <span class="service-tag">対応領域 03</span>
+              <img src="assets/images/service_rpa_automation_ui.png" alt="RPA・PC自動化を表す業務フローUI" loading="lazy" width="1536" height="1024">
+              <div class="service-content">
+                <h3>RPA・PC自動化</h3>
+                <ul class="check-list">
+                  <li>Web操作の自動化</li>
+                  <li>データ転記・入力作業の自動化</li>
+                  <li>定型作業の自動実行</li>
+                  <li>帳票作成・出力の自動化</li>
+                  <li>複数システムの連携</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <p class="services-footnote">※ 各領域を組み合わせてのご依頼も可能です。料金プランの月間制作件数と保守の範囲内で対応します。</p>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Features</p>
+            <h2>サービスの特徴</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-item reveal">
+              <span class="icon-badge"><svg><use href="#icon-clipboard-check"></use></svg></span>
+              <h3>月額制で継続改善</h3>
+              <p>継続的に改善し、効果を最大化</p>
+            </article>
+            <article class="feature-item reveal">
+              <span class="icon-badge"><svg><use href="#icon-message-circle-check"></use></svg></span>
+              <h3>保守・サポート込み</h3>
+              <p>導入後も安心の保守サポート体制</p>
+            </article>
+            <article class="feature-item reveal">
+              <span class="icon-badge"><svg><use href="#icon-users"></use></svg></span>
+              <h3>人件費を削減</h3>
+              <p>人を増やさずに業務を効率化</p>
+            </article>
+            <article class="feature-item reveal">
+              <span class="icon-badge"><svg><use href="#icon-clock"></use></svg></span>
+              <h3>月10〜30時間削減<sup>※</sup></h3>
+              <p>多くの企業で作業時間を大幅削減</p>
+            </article>
+            <article class="feature-item reveal">
+              <span class="icon-badge"><svg><use href="#icon-building-2"></use></svg></span>
+              <h3>小規模事業者向け</h3>
+              <p>少人数チームの業務に最適化</p>
+            </article>
+            <article class="feature-item reveal">
+              <span class="icon-badge"><svg><use href="#icon-sparkles"></use></svg></span>
+              <h3>IT担当不要</h3>
+              <p>専門知識がなくても安心</p>
+            </article>
+          </div>
+          <p class="section-note">※ 削減時間の目安であり、効果は業務内容・対象範囲により異なります。</p>
+        </div>
+      </section>
+
+      <section class="section before-after" id="before_after_summary">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Impact</p>
+            <h2>導入前後の効果</h2>
+          </div>
+          <div class="effect-layout">
+            <div class="comparison-card reveal">
+              <div class="comparison-column">
+                <p class="comparison-label before-label">導入前</p>
+                <div class="comparison-metrics">
+                  <div><span>月の作業時間</span><strong>約45時間</strong></div>
+                  <div><span>作業ミス</span><strong>月平均12件</strong></div>
+                  <div><span>属人化リスク</span><strong>高い</strong></div>
+                </div>
+              </div>
+              <div class="comparison-arrow" aria-hidden="true">→</div>
+              <div class="comparison-column after-column">
+                <p class="comparison-label after-label">導入後</p>
+                <div class="comparison-metrics">
+                  <div><span>月の作業時間</span><strong>約30分</strong></div>
+                  <div><span>作業ミス</span><strong>月平均2件</strong></div>
+                  <div><span>属人化リスク</span><strong>低い</strong></div>
+                </div>
+              </div>
+            </div>
+            <aside class="highlight-card reveal">
+              <span>削減時間の目安</span>
+              <strong>月間44時間</strong>
+              <p>の削減を実現</p>
+            </aside>
+          </div>
+          <p class="section-note">※ 上記は導入企業の一例です。削減効果は業務内容・対象範囲により異なります。</p>
+        </div>
+      </section>
+
+      <section class="section benefits" id="benefits">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Benefits</p>
+            <h2>導入メリット（Before → After）</h2>
+          </div>
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <span class="icon-badge"><svg><use href="#icon-timer-reset"></use></svg></span>
+              <h3>作業時間の削減</h3>
+              <p><span>Before</span>残業や休日対応が発生</p>
+              <p><span>After</span>定時で終わり、余裕が生まれる</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge"><svg><use href="#icon-shield-check"></use></svg></span>
+              <h3>ミス・抜け漏れの削減</h3>
+              <p><span>Before</span>手作業でミスが多い</p>
+              <p><span>After</span>自動化でミスがゼロに近づく</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge"><svg><use href="#icon-users-round"></use></svg></span>
+              <h3>属人化の解消</h3>
+              <p><span>Before</span>特定の人しかわからない</p>
+              <p><span>After</span>誰でも業務を引き継げる</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge"><svg><use href="#icon-target"></use></svg></span>
+              <h3>本業に集中できる</h3>
+              <p><span>Before</span>雑務に時間を取られる</p>
+              <p><span>After</span>売上・戦略に集中できる</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge"><svg><use href="#icon-user-check"></use></svg></span>
+              <h3>人を増やさず運営</h3>
+              <p><span>Before</span>人手不足で業務が限界</p>
+              <p><span>After</span>少人数でスケール可能</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge"><svg><use href="#icon-layout-dashboard"></use></svg></span>
+              <h3>業務の整理・可視化</h3>
+              <p><span>Before</span>全体像が見えづらい</p>
+              <p><span>After</span>業務が整理され改善が進む</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Pricing</p>
+            <h2>料金プラン</h2>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <h3>ライトプラン</h3>
+              <p class="plan-description">小さく始めたい方におすすめ</p>
+              <p class="price"><span>29,800</span>円/月</p>
+              <ul class="check-list">
+                <li>Excel/スプレッドシート作業自動化</li>
+                <li>業務システム構築</li>
+                <li>制作件数：月1件まで</li>
+                <li>制作物の保守</li>
+              </ul>
+              <a class="button button-secondary" href="#final_cta" data-open-modal="diagnosis">無料で診断する</a>
+            </article>
+            <article class="price-card featured-plan reveal">
+              <p class="plan-badge">おすすめ</p>
+              <h3>スタンダードプラン</h3>
+              <p class="plan-description">バランスよく改善したい方に</p>
+              <p class="price"><span>59,800</span>円/月</p>
+              <ul class="check-list">
+                <li>Excel/スプレッドシート作業自動化</li>
+                <li>業務システム構築</li>
+                <li>RPA導入</li>
+                <li>制作件数：月3件まで</li>
+                <li>制作物の保守</li>
+                <li>毎月の改善相談（月1回）</li>
+              </ul>
+              <a class="button button-primary" href="#final_cta" data-open-modal="diagnosis">無料で診断する</a>
+            </article>
+            <article class="price-card reveal">
+              <h3>プレミアムプラン</h3>
+              <p class="plan-description">本格的にDXを進めたい方に</p>
+              <p class="price"><span>88,000</span>円/月</p>
+              <ul class="check-list">
+                <li>Excel/スプレッドシート作業自動化</li>
+                <li>業務システム構築</li>
+                <li>RPA導入</li>
+                <li>制作件数：月5件まで</li>
+                <li>制作物の保守</li>
+                <li>毎月の改善相談（月2回）</li>
+              </ul>
+              <a class="button button-secondary" href="#final_cta" data-open-modal="diagnosis">無料で診断する</a>
+            </article>
+            <aside class="included-card reveal">
+              <h3>すべてのプランに含まれるもの</h3>
+              <ul class="check-list">
+                <li>初期ヒアリング・業務分析</li>
+                <li>改善提案・要件定義</li>
+                <li>システム開発・導入</li>
+                <li>保守・運用サポート</li>
+                <li>軽微改善・アップデート</li>
+              </ul>
+            </aside>
+          </div>
+          <ul class="section-note-list">
+            <li>「1件」は、1つの目的に対する小規模な制作・改善を指します（例：売上管理表の改善、問い合わせ管理表の作成、業務システムの1機能追加 など）。内容が大きい場合は複数件分として対応、または別途お見積りとなります。</li>
+            <li>最低契約期間は6ヶ月です。最低契約期間以降も6ヶ月単位で継続・解約いただけます。<strong class="campaign-only">※ 先着5社様限定の初月お試し無料キャンペーン期間は最低契約期間の対象外です。</strong></li>
+            <li>月末締め／翌月末日支払（銀行振込・振込手数料はお客様負担）</li>
+            <li>未使用の制作件数は翌月へ繰り越しできません。</li>
+            <li>外部ツール・サービスの利用料、大規模システム開発は月額に含まれません。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mid-cta" aria-label="無料診断のご案内">
+        <div class="container">
+          <div class="mid-cta-panel reveal">
+            <div class="mid-cta-text">
+              <p class="mid-cta-kicker campaign-only">先着5社様限定 / 初月お試し無料キャンペーン実施中</p>
+              <h2>どのプランが合うか、<br class="mid-cta-br"/>まずは無料診断で確認しませんか？</h2>
+              <p>現在の業務をヒアリングし、自動化できる作業を診断したうえで、最適なプランをご提案します。<br/>
+            </div>
+            <div class="mid-cta-action">
+              <a class="button button-primary" href="#final_cta" data-open-modal="diagnosis">
+                無料で診断してみる
+                <svg><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section results" id="results_testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Results</p>
+            <h2>導入実績・お客様の声</h2>
+          </div>
+          <div class="results-panel">
+            <div class="stats-grid">
+              <article class="stat-card reveal">
+                <span class="icon-badge"><svg><use href="#icon-repeat"></use></svg></span>
+                <p>継続率</p>
+                <strong>96<span>%</span></strong>
+              </article>
+              <article class="stat-card reveal">
+                <span class="icon-badge"><svg><use href="#icon-alarm-clock"></use></svg></span>
+                <p>平均削減時間</p>
+                <strong>約23.7<span>時間/月</span></strong>
+              </article>
+              <article class="stat-card reveal">
+                <span class="icon-badge"><svg><use href="#icon-sun"></use></svg></span>
+                <p>満足度</p>
+                <strong>4.9<span>/5.0</span></strong>
+              </article>
+            </div>
+            <p class="section-note">※ 自社調査による集計値です。導入時期・業務内容により実績には差があります。</p>
+            <div class="testimonial-grid">
+              <article class="testimonial-card reveal">
+                <img src="assets/images/testimonial_avatar_01.png" alt="製造業の経理責任者のポートレート" loading="lazy" width="427" height="240">
+                <blockquote>毎月20時間以上の作業が自動化され、今は本業に集中できています。</blockquote>
+                <p>製造業 / 経理責任者</p>
+              </article>
+              <article class="testimonial-card reveal">
+                <img src="assets/images/testimonial_avatar_02.png" alt="サービス業の促進責任者のポートレート" loading="lazy" width="360" height="240">
+                <blockquote>複雑なExcel業務がスムーズになり、ミスもほとんどなくなりました。</blockquote>
+                <p>サービス業 / 促進責任者</p>
+              </article>
+              <article class="testimonial-card reveal">
+                <img src="assets/images/testimonial_avatar_03.png" alt="小売業の業務担当者のポートレート" loading="lazy" width="360" height="240">
+                <blockquote>IT担当がいなくても丁寧にサポートしてくれて助かっています。</blockquote>
+                <p>小売業 / 業務担当者</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container faq-layout">
+          <div class="section-heading reveal">
+            <p class="section-kicker">FAQ</p>
+            <h2>よくある質問</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary>IT担当者がいなくても依頼できますか？</summary>
+              <p>はい。業務内容のヒアリングから要件整理、導入後の運用サポートまでまとめて対応します。「何を自動化できるかわからない」段階からのご相談も歓迎しています。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>既存のExcelやシステムの改善も依頼できますか？</summary>
+              <p>可能です。すでにお使いの管理表や業務システムを引き継いで、整理・自動化・機能追加を行うご依頼も多くいただいています。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>どんな業種・業務に対応していますか？</summary>
+              <p>業種は問いません。Excel・スプレッドシートでの管理や、PC上での定型作業がある業務であれば幅広く対応可能です。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>最低契約期間はありますか？</summary>
+              <p>最低契約期間は6ヶ月です。最低期間以降も6ヶ月単位での継続・解約をお願いしています。<span class="campaign-only">なお、現在実施中の「先着5社様限定 初月お試し無料キャンペーン」期間中は最低契約期間の対象外で、1ヶ月後に継続するかご判断いただけます。</span></p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>プランの変更はできますか？</summary>
+              <p>月単位でプランの変更が可能です。業務の状況に応じてライト・スタンダード・プレミアムを柔軟に切り替えていただけます。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>どれくらいで効果が出ますか？</summary>
+              <p>定型業務の自動化であれば、初月から削減時間を実感できるケースがあります。効果は業務内容や対象範囲により異なります。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta" id="final_cta">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div class="cta-copy">
+              <p class="cta-badge campaign-only">先着5社様限定キャンペーン</p>
+              <p class="cta-kicker campaign-hidden">FREE DIAGNOSIS</p>
+              <h2 class="campaign-only">無料診断で<span>初月お試し無料</span></h2>
+              <h2 class="campaign-hidden">まずは<span>無料診断</span>から<br/>はじめませんか？</h2>
+              <p class="cta-lead campaign-only">先着5社様限定で初月のお試しを無料でご提供中。現在の業務をヒアリングし、自動化できる作業を診断したうえで最適な改善プランをご提案します。気に入っていただけたら、まずは初月お試しからスタート。</p>
+              <p class="cta-lead campaign-hidden">現在の業務をヒアリングし、自動化できる作業を診断したうえで最適な改善プランをご提案します。強引な営業は一切ありません。</p>
+              <ul class="cta-points campaign-only">
+                <li>無料診断で自動化できる作業を診断・ご提案</li>
+                <li>初月お試し無料 ─ 最低契約期間の対象外</li>
+                <li>1ヶ月後に継続するかご判断いただけます</li>
+              </ul>
+              <ul class="cta-points campaign-hidden">
+                <li>業務ヒアリングは Chatwork でやり取り</li>
+                <li>自動化できる作業を診断・ご提案</li>
+                <li>そのまま依頼しなくてもOK</li>
+              </ul>
+              <div class="cta-actions">
+                <a class="button button-primary" href="mailto:contact@bearmin.jp" data-open-modal="diagnosis">無料で診断する</a>
+              </div>
+              <p class="cta-finetext campaign-only">※ 先着5社様限定。お申し込みから初月終了までキャンペーン適用、期間中はいつでも解約可能です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#hero" aria-label="Bearmin Studio トップへ">
+            <img class="brand-logo" src="assets/images/logo.png" alt="Bearmin Studio" width="1322" height="347">
+          </a>
+        </div>
+        <div class="footer-column">
+          <h2>サービス</h2>
+          <a href="#services">Excel・スプレッドシート自動化</a>
+          <a href="#services">業務システム構築</a>
+          <a href="#services">RPA・PC自動化</a>
+        </div>
+        <div class="footer-column">
+          <h2>サポート</h2>
+          <a href="#pricing">料金プラン</a>
+          <a href="#faq">よくある質問</a>
+          <a href="#final_cta" data-open-modal="diagnosis">無料診断・お問い合わせ</a>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p class="copyright">© 2026 Bearmin Studio</p>
+        <ul class="footer-legal">
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <dialog class="diagnosis-modal" id="diagnosisModal" aria-labelledby="diagnosisModalTitle">
+      <div class="diagnosis-modal-card">
+        <button class="diagnosis-modal-close" type="button" aria-label="閉じる" data-close-modal>
+          <svg><use href="#icon-x"></use></svg>
+        </button>
+        <header class="diagnosis-modal-header">
+          <p class="diagnosis-modal-kicker">無料診断のお申し込み</p>
+          <h2 id="diagnosisModalTitle">業務を診断し、改善プランをご提案</h2>
+          <p class="diagnosis-modal-lead">ご入力いただいた内容をもとに、メールで折り返しご連絡いたします。<br/><span class="campaign-only">現在「先着5社様限定 初月お試し無料キャンペーン」を実施中です。</span></p>
+        </header>
+        <!--
+          ssgform: https://ssgform.com/s/gYqsa8fzItap
+          送信先: contact@bearmin.jp
+          ※ name 属性は ssgform 側で設定したフィールド名と一致させてください。
+        -->
+        <form class="diagnosis-form" action="https://ssgform.com/s/gYqsa8fzItap" method="post">
+          <div class="diagnosis-form-row">
+            <label class="diagnosis-field">
+              <span class="diagnosis-field-label">お名前 <em>必須</em></span>
+              <input type="text" name="name" required autocomplete="name" placeholder="山田 太郎">
+            </label>
+            <label class="diagnosis-field">
+              <span class="diagnosis-field-label">会社名・屋号</span>
+              <input type="text" name="company" autocomplete="organization" placeholder="株式会社○○">
+            </label>
+          </div>
+          <label class="diagnosis-field">
+            <span class="diagnosis-field-label">メールアドレス <em>必須</em></span>
+            <input type="email" name="email" required autocomplete="email" placeholder="example@bearmin.jp">
+          </label>
+          <label class="diagnosis-field">
+            <span class="diagnosis-field-label">ご興味のあるサービス</span>
+            <select name="service">
+              <option value="">未選択</option>
+              <option value="Excel・スプレッドシート自動化">Excel・スプレッドシート自動化</option>
+              <option value="業務システム構築">業務システム構築</option>
+              <option value="RPA・PC自動化">RPA・PC自動化</option>
+              <option value="どれが合うかわからない">どれが合うか相談したい</option>
+            </select>
+          </label>
+          <fieldset class="diagnosis-field diagnosis-checkboxes">
+            <legend class="diagnosis-field-label">ご相談・診断したい内容（複数選択可） <em>必須</em></legend>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="集計・転記作業を自動化したい">
+              <span>集計・転記作業を自動化したい</span>
+            </label>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="Excel・スプレッドシートを使いやすくしたい">
+              <span>Excel・スプレッドシートを使いやすくしたい</span>
+            </label>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="業務システムを新しく作りたい">
+              <span>業務システムを新しく作りたい</span>
+            </label>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="既存のExcel・システムを改善したい">
+              <span>既存のExcel・システムを改善したい</span>
+            </label>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="毎日のPC作業を自動化したい">
+              <span>毎日のPC作業を自動化したい</span>
+            </label>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="業務を可視化・整理したい">
+              <span>業務を可視化・整理したい</span>
+            </label>
+            <label class="diagnosis-checkbox">
+              <input type="checkbox" name="concerns" value="まだ整理できていない / どれが合うか相談したい">
+              <span>まだ整理できていない / どれが合うか相談したい</span>
+            </label>
+          </fieldset>
+          <label class="diagnosis-field">
+            <span class="diagnosis-field-label">詳細・補足（任意）</span>
+            <textarea name="message" rows="4" placeholder="現在のお悩み、ご希望のスタートタイミング、特に困っている業務など、自由にご記入ください。"></textarea>
+          </label>
+          <label class="diagnosis-consent">
+            <input type="checkbox" required>
+            <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します</span>
+          </label>
+          <div class="diagnosis-form-actions">
+            <button type="button" class="button button-secondary" data-close-modal>キャンセル</button>
+            <button type="submit" class="button button-primary">無料診断を申し込む</button>
+          </div>
+          <p class="diagnosis-form-note">※ 送信内容は <strong>contact@bearmin.jp</strong> に届きます。通常1〜2営業日以内にご返信します。</p>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 内部資料（リポジトリには含めない）
+【Bearmin-Studio】事業詳細*.txt
+
+# ChatGPT で生成した一時画像
+/ChatGPT Image *.png
+
+# ローカル一時フォルダ（ソース素材）
+/お客様/
+/キャラクター/
+/ロゴ画像/
+
+# Logs
+*.log
+
+# Build output / temp
+dist/
+build/
+tmp/

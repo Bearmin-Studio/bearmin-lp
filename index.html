@@ -48,6 +48,23 @@
 
       gtag('config', 'AW-18193139845');
     </script>
+    <!-- Event snippet for リードフォームの送信 conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18193139845/C2YNCOXFt7QcEIWRleND',
+            'value': 1.0,
+            'currency': 'JPY',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
   <!--
     キャンペーン切り替え:

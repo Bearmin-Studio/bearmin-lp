@@ -68,6 +68,26 @@ if (diagnosisModal && typeof diagnosisModal.showModal === "function") {
         diagnosisForm.appendChild(hidden);
       }
       hidden.value = joinedValues;
+
+      // Google広告コンバージョン: 計測ビーコンを待ってからフォーム実送信
+      if (typeof gtag === "function" && !diagnosisForm.dataset.conversionSent) {
+        event.preventDefault();
+        diagnosisForm.dataset.conversionSent = "1";
+        let submitted = false;
+        const submitOnce = () => {
+          if (submitted) return;
+          submitted = true;
+          diagnosisForm.submit();
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-18193139845/C2YNCOXFt7QcEIWRleND",
+          value: 1.0,
+          currency: "JPY",
+          event_callback: submitOnce,
+        });
+        // 計測が返ってこないネットワーク状況に備えたフォールバック
+        setTimeout(submitOnce, 1500);
+      }
     });
 
     concernsFieldset.addEventListener("change", () => {

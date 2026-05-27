@@ -40,8 +40,8 @@ if (diagnosisModal && typeof diagnosisModal.showModal === "function") {
 
   if (diagnosisForm && concernsFieldset) {
     diagnosisForm.addEventListener("submit", (event) => {
-      const anyChecked = concernsFieldset.querySelector('input[type="checkbox"]:checked');
-      if (!anyChecked) {
+      const checkedBoxes = concernsFieldset.querySelectorAll('input[type="checkbox"]:checked');
+      if (checkedBoxes.length === 0) {
         event.preventDefault();
         concernsFieldset.classList.add("is-invalid");
         if (!concernsFieldset.querySelector(".diagnosis-field-error")) {
@@ -51,7 +51,23 @@ if (diagnosisModal && typeof diagnosisModal.showModal === "function") {
           concernsFieldset.appendChild(error);
         }
         concernsFieldset.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
       }
+
+      // ssgform は同名フィールドの複数値を扱えないので、
+      // 選択された値を改行区切りで1つのhidden inputに集約して送信する
+      const joinedValues = [...checkedBoxes].map((c) => `・${c.value}`).join("\n");
+      concernsFieldset.querySelectorAll('input[type="checkbox"]').forEach((c) => {
+        c.removeAttribute("name");
+      });
+      let hidden = diagnosisForm.querySelector('input[type="hidden"][name="concerns"]');
+      if (!hidden) {
+        hidden = document.createElement("input");
+        hidden.type = "hidden";
+        hidden.name = "concerns";
+        diagnosisForm.appendChild(hidden);
+      }
+      hidden.value = joinedValues;
     });
 
     concernsFieldset.addEventListener("change", () => {

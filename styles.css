@@ -21,8 +21,8 @@
   --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
   --shadow-floating: 0 20px 60px rgba(0, 0, 0, 0.12);
   --shadow-button: 0 8px 20px rgba(0, 0, 0, 0.2);
-  --font-primary: "Noto Sans JP", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-numeric: "Inter", "Noto Sans JP", system-ui, sans-serif;
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "YuGothic", "Meiryo", system-ui, sans-serif;
+  --font-numeric: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 * {

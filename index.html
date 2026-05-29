@@ -26,18 +26,34 @@
     <meta name="twitter:image:alt" content="Bearmin Studio - 時間と余裕をつくる自動化パートナー">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="assets/images/hero_black_gold.webp" fetchpriority="high">
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+    >
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     >
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      >
+    </noscript>
     <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "wxgjmoyq2a");
+    <script>
+      window.addEventListener('load', function () {
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wxgjmoyq2a");
+      });
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18193139845"></script>
@@ -152,7 +168,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#hero" aria-label="Bearmin Studio トップへ">
-          <img class="brand-logo" src="assets/images/logo.png" alt="Bearmin Studio" width="1322" height="347">
+          <img class="brand-logo" src="assets/images/logo.webp" alt="Bearmin Studio" width="1322" height="347">
         </a>
 
         <nav class="site-nav" aria-label="主要ナビゲーション">
@@ -175,8 +191,11 @@
           <div class="hero-copy reveal">
             <p class="eyebrow">「めんどうくさい作業」をまるごと自動化</p>
             <h1 class="hero-title">
-              <img class="hero-title-image" src="assets/images/hero_title.png" alt="時間と余裕をつくる 自動化パートナー" width="2508" height="627">
+              <img class="hero-title-image" src="assets/images/hero_title.webp" alt="時間と余裕をつくる 自動化パートナー" width="2508" height="627" fetchpriority="high" decoding="async">
             </h1>
+            <p class="hero-catch">
+              繰り返し作業を、<strong>月20時間</strong>カット。
+            </p>
             <!-- <p class="hero-description">
               Excel・スプレッドシートの自動化から、業務システム構築、RPA導入まで。人がやらなくてもいい作業を減らし、人件費削減、属人化の解消、業務効率向上が叶えられる環境をつくります。
             </p> -->
@@ -199,11 +218,13 @@
           <div class="hero-visual reveal">
             <img
               class="hero-image"
-              src="assets/images/hero_black_gold.png"
+              src="assets/images/hero_black_gold.webp"
               alt="業務自動化に取り組むビジネスパーソン"
               width="1254"
               height="1254"
               loading="eager"
+              fetchpriority="high"
+              decoding="async"
             >
             <div class="metric-card metric-time" aria-hidden="true">
               <span class="metric-label">今月の削減時間</span>
@@ -236,27 +257,27 @@
           </div>
           <div class="problem-grid">
             <article class="problem-card reveal">
-              <img src="assets/images/problem_repetitive_work.png" alt="同じ作業を繰り返している担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <img src="assets/images/problem_repetitive_work.webp" alt="同じ作業を繰り返している担当者のイラスト" loading="lazy" width="1254" height="1254">
               <h3>毎月同じ作業を繰り返している</h3>
               <p>転記・集計・資料作成に時間がかかっている</p>
             </article>
             <article class="problem-card reveal">
-              <img src="assets/images/problem_complex_excel.png" alt="複雑なスプレッドシートに悩む担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <img src="assets/images/problem_complex_excel.webp" alt="複雑なスプレッドシートに悩む担当者のイラスト" loading="lazy" width="1254" height="1254">
               <h3>Excelが複雑化し属人化している</h3>
               <p>特定の担当者しかわからず引き継げない</p>
             </article>
             <article class="problem-card reveal">
-              <img src="assets/images/problem_no_it_staff.png" alt="IT相談先がなく困っている担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <img src="assets/images/problem_no_it_staff.webp" alt="IT相談先がなく困っている担当者のイラスト" loading="lazy" width="1254" height="1254">
               <h3>IT担当がいなくて改善できない</h3>
               <p>誰に相談すればいいかわからず放置している</p>
             </article>
             <article class="problem-card reveal">
-              <img src="assets/images/problem_efficiency_before_hiring.png" alt="採用前の効率化を考える担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <img src="assets/images/problem_efficiency_before_hiring.webp" alt="採用前の効率化を考える担当者のイラスト" loading="lazy" width="1254" height="1254">
               <h3>人を増やす前に効率化したい</h3>
               <p>採用コストをかけずに生産性を上げたい</p>
             </article>
             <article class="problem-card reveal">
-              <img src="assets/images/problem_human_error.png" alt="作業ミスや抜け漏れに悩む担当者のイラスト" loading="lazy" width="1254" height="1254">
+              <img src="assets/images/problem_human_error.webp" alt="作業ミスや抜け漏れに悩む担当者のイラスト" loading="lazy" width="1254" height="1254">
               <h3>ミスや抜け漏れが発生してしまう</h3>
               <p>手作業が多くヒューマンエラーが不安</p>
             </article>
@@ -274,7 +295,7 @@
           <div class="service-grid">
             <article class="service-card service-green reveal">
               <span class="service-tag">対応領域 01</span>
-              <img src="assets/images/service_excel_automation_gold.png" alt="スプレッドシート自動化を表すゴールド基調のダッシュボードUI" loading="lazy" width="1536" height="1024">
+              <img src="assets/images/service_excel_automation_gold.webp" alt="スプレッドシート自動化を表すゴールド基調のダッシュボードUI" loading="lazy" width="1536" height="1024">
               <div class="service-content">
                 <h3>Excel・スプレッドシート自動化</h3>
                 <ul class="check-list">
@@ -288,7 +309,7 @@
             </article>
             <article class="service-card service-blue reveal">
               <span class="service-tag">対応領域 02</span>
-              <img src="assets/images/service_business_system_gold.png" alt="業務システム構築を表すゴールド基調のダッシュボードUI" loading="lazy" width="1536" height="1024">
+              <img src="assets/images/service_business_system_gold.webp" alt="業務システム構築を表すゴールド基調のダッシュボードUI" loading="lazy" width="1536" height="1024">
               <div class="service-content">
                 <h3>業務システム構築</h3>
                 <ul class="check-list">
@@ -302,7 +323,7 @@
             </article>
             <article class="service-card service-purple reveal">
               <span class="service-tag">対応領域 03</span>
-              <img src="assets/images/service_rpa_automation_ui.png" alt="RPA・PC自動化を表す業務フローUI" loading="lazy" width="1536" height="1024">
+              <img src="assets/images/service_rpa_automation_ui.webp" alt="RPA・PC自動化を表す業務フローUI" loading="lazy" width="1536" height="1024">
               <div class="service-content">
                 <h3>RPA・PC自動化</h3>
                 <ul class="check-list">
@@ -561,17 +582,17 @@
             <p class="section-note">※ 自社調査による集計値です。導入時期・業務内容により実績には差があります。</p>
             <div class="testimonial-grid">
               <article class="testimonial-card reveal">
-                <img src="assets/images/testimonial_avatar_01.png" alt="製造業の経理責任者のポートレート" loading="lazy" width="427" height="240">
+                <img src="assets/images/testimonial_avatar_01.webp" alt="製造業の経理責任者のポートレート" loading="lazy" width="427" height="240">
                 <blockquote>毎月20時間以上の作業が自動化され、今は本業に集中できています。</blockquote>
                 <p>製造業 / 経理責任者</p>
               </article>
               <article class="testimonial-card reveal">
-                <img src="assets/images/testimonial_avatar_02.png" alt="サービス業の促進責任者のポートレート" loading="lazy" width="360" height="240">
+                <img src="assets/images/testimonial_avatar_02.webp" alt="サービス業の促進責任者のポートレート" loading="lazy" width="360" height="240">
                 <blockquote>複雑なExcel業務がスムーズになり、ミスもほとんどなくなりました。</blockquote>
                 <p>サービス業 / 促進責任者</p>
               </article>
               <article class="testimonial-card reveal">
-                <img src="assets/images/testimonial_avatar_03.png" alt="小売業の業務担当者のポートレート" loading="lazy" width="360" height="240">
+                <img src="assets/images/testimonial_avatar_03.webp" alt="小売業の業務担当者のポートレート" loading="lazy" width="360" height="240">
                 <blockquote>IT担当がいなくても丁寧にサポートしてくれて助かっています。</blockquote>
                 <p>小売業 / 業務担当者</p>
               </article>
@@ -649,7 +670,7 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a class="brand" href="#hero" aria-label="Bearmin Studio トップへ">
-            <img class="brand-logo" src="assets/images/logo.png" alt="Bearmin Studio" width="1322" height="347">
+            <img class="brand-logo" src="assets/images/logo.webp" alt="Bearmin Studio" width="1322" height="347">
           </a>
         </div>
         <div class="footer-column">

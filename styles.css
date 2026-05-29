@@ -121,7 +121,7 @@ body.campaign-active .campaign-hidden {
   position: absolute;
   inset: 0;
   content: "";
-  background-image: url("assets/images/background_elements.png");
+  background-image: url("assets/images/background_elements.webp");
   background-position: center top;
   background-size: cover;
   opacity: 0.35;
@@ -443,6 +443,24 @@ h3 {
   filter:
     drop-shadow(0 1px 1px rgba(26, 26, 26, 0.15))
     drop-shadow(0 4px 10px rgba(26, 26, 26, 0.06));
+}
+
+.hero-catch {
+  margin: 16px 0 24px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-text-heading);
+  letter-spacing: 0.01em;
+}
+
+.hero-catch strong {
+  display: inline-block;
+  padding: 0 4px;
+  color: var(--color-accent-gold-dark);
+  font-size: 1.15em;
+  font-weight: 800;
+  background: linear-gradient(transparent 60%, rgba(212, 165, 116, 0.32) 60%);
 }
 
 .hero-description {
@@ -2168,6 +2186,12 @@ body.modal-open {
   .hero-description {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-catch {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
   }
 
   .hero-actions,

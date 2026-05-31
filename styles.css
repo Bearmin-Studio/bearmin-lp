@@ -31,7 +31,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 96px;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -329,7 +329,7 @@ h3 {
 
 .header-inner {
   display: flex;
-  min-height: 80px;
+  min-height: 64px;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
@@ -340,15 +340,15 @@ h3 {
   align-items: center;
   gap: 10px;
   color: var(--color-text-heading);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   line-height: 1;
 }
 
 .brand-logo {
-  width: 144px;
+  width: 124px;
   height: auto;
-  max-height: 44px;
+  max-height: 36px;
   object-fit: contain;
 }
 
@@ -2107,7 +2107,7 @@ body.modal-open {
 
 @media (max-width: 767px) {
   html {
-    scroll-padding-top: 76px;
+    scroll-padding-top: 56px;
   }
 
   body {
@@ -2147,17 +2147,17 @@ body.modal-open {
   }
 
   .header-inner {
-    min-height: 64px;
+    min-height: 44px;
   }
 
   .brand {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .brand-logo {
-    width: 142px;
+    width: 92px;
     height: auto;
-    max-height: 42px;
+    max-height: 24px;
   }
 
   .site-nav,
@@ -2166,9 +2166,9 @@ body.modal-open {
   }
 
   .header-actions .button {
-    min-height: 40px;
-    padding: 0 14px;
-    font-size: 13px;
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 12px;
     white-space: nowrap;
   }
 
